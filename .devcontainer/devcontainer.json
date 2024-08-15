@@ -13,7 +13,8 @@
         "dbaeumer.vscode-eslint",
         "editorconfig.editorconfig",
         "ms-vscode.vscode-typescript-next",
-        "pmneo.tsimporter"
+        "pmneo.tsimporter",
+        "hediet.vscode-drawio"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",

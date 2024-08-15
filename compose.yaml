@@ -5,12 +5,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/workspaces
-      - node_modules_volume:/workspaces/node_modules
     ports:
       - 3000:3000
       - 6006:6006
     tty: true
     platform: linux/x86_64
-volumes:
-  node_modules_volume:
-    driver: local

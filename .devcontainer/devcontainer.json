@@ -2,7 +2,9 @@
   "name": "Dev Container",
   "dockerComposeFile": "../compose.yaml",
   "service": "nodejs",
+  "remoteUser": "dev",
   "workspaceFolder": "/workspaces",
+  "forwardPorts": [3000, 6006],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -16,9 +18,13 @@
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnPaste": true,
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "files.eol": "\n"
       }
     }
   },
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
   "postCreateCommand": "bash ./.devcontainer/post-create.sh"
 }

@@ -11,14 +11,15 @@
         "MS-CEINTL.vscode-language-pack-ja",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "editorconfig.editorconfig",
         "ms-vscode.vscode-typescript-next",
         "pmneo.tsimporter",
         "hediet.vscode-drawio",
         "eamodio.gitlens",
-        "donjayamanne.githistory"
+        "donjayamanne.githistory",
+        "pkief.material-icon-theme"
       ],
       "settings": {
+        "workbench.iconTheme": "material-icon-theme",
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,

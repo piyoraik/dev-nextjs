@@ -14,7 +14,17 @@ Commit が行われる前に以下のコマンドが実行
 "prettier --write"
 ```
 
+## Storybook
+
+Reactのコンポーネントを1つのアプリケーションのように扱えるツール
+https://qiita.com/masakinihirota/items/ac552b8b492d2b962818
+```
+// 実行後 http://localhost:6006 へアクセス
+$ yarn stroybook
+```
+
 ## ディレクトリ構造
+
 ```
 ├── app          ... ルーティングに関するコンポーネント
 ├── features     ... ロジック + コンポーネントをまとめたもの

@@ -3,7 +3,7 @@
   "dockerComposeFile": "../compose.yaml",
   "service": "nodejs",
   "remoteUser": "dev",
-  "workspaceFolder": "/workspaces",
+  "workspaceFolder": "/dresser",
   "forwardPorts": [3000, 6006],
   "customizations": {
     "vscode": {
@@ -14,7 +14,9 @@
         "editorconfig.editorconfig",
         "ms-vscode.vscode-typescript-next",
         "pmneo.tsimporter",
-        "hediet.vscode-drawio"
+        "hediet.vscode-drawio",
+        "eamodio.gitlens",
+        "donjayamanne.githistory"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",

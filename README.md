@@ -33,11 +33,11 @@ https://qiita.com/miumi/items/359b8a77bbb6f9666950
 
 | プレフィックス | ブランチ命名            | タスクの具体例                          |
 | :------------- | :---------------------- | :-------------------------------------- |
-| [機能追加]     | feature/\*-\<issueNo\>  | 新しい機能の追加                        |
-| [不具合修正]   | fix/\*-\<issueNo\>      | バックエンド API との連携不備の修正など |
-| [細かい修正]   | chore/\*-\<issueNo\>    | パッケージの更新、タイポの修正など      |
-| [開発環境改善] | dx/\*-\<issueNo\>       | 開発環境に関わるものを修正、追加など    |
-| [リファクタ]   | refactor/\*-\<issueNo\> | リファクタリング                        |
+| [機能追加]     | feature/\*-\<BacklogNo\>  | 新しい機能の追加                        |
+| [不具合修正]   | fix/\*-\<BacklogNo\>      | バックエンド API との連携不備の修正など |
+| [細かい修正]   | chore/\*-\<BacklogNo\>    | パッケージの更新、タイポの修正など      |
+| [開発環境改善] | dx/\*-\<BacklogNo\>       | 開発環境に関わるものを修正、追加など    |
+| [リファクタ]   | refactor/\*-\<BacklogNo\> | リファクタリング                        |
 
 **ブランチ名例)**
 feature/add-login-form-211
@@ -53,3 +53,13 @@ feature/add-login-form-211
 - remove：削除（ファイル）
 
 https://qiita.com/itosho/items/9565c6ad2ffc24c09364
+
+## 環境変数
+
+`.env` ファイルを作成し、`.env.sample` ファイルの内容をコピーして、環境変数を設定します。
+
+| Key | 内容   |
+| :------------- | :---------------------- |
+| AWS_ACCESS_KEY_ID | AWS ACCESS KEY ID     |
+| AWS_SECRET_ACCESS_KEY | AWS SECRET ACCESS KEY |
+| AWS_DEFAULT_REGION | AWS DEDAULT REGION |

@@ -12,3 +12,10 @@ bin/
 obj/
 out/
 .next/
+.dist
+
+# hidden
+.*/
+
+# package
+node_modules/

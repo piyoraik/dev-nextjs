@@ -1,4 +1,3 @@
-/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -6,6 +5,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'next/core-web-vitals',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

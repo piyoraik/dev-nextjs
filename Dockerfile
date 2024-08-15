@@ -9,6 +9,9 @@ RUN apt update && apt install -y less bash-completion && apt clean
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
 
 # User Setting
+RUN groupmod -g 12345 node && \
+    usermod -u 12345 -g 12345 node
+
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME -s /bin/bash \
     #

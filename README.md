@@ -3,7 +3,7 @@
 - typescript-eslint
 - eslint-plugin-import
 
-https://zenn.dev/resistance_gowy/articles/91b4f62b9f48e
+https://zenn.dev/resistance_gowy/articles/91b4f62b9f48ec
 
 ## husky
 

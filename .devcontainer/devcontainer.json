@@ -3,7 +3,7 @@
   "dockerComposeFile": "../compose.yaml",
   "service": "nodejs",
   "remoteUser": "dev",
-  "workspaceFolder": "/dresser",
+  "workspaceFolder": "/workspaces",
   "forwardPorts": [3000, 6006],
   "customizations": {
     "vscode": {
@@ -29,5 +29,6 @@
   "mounts": [
     "source=${localWorkspaceFolderBasename}-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
   ],
-  "postCreateCommand": "bash ./.devcontainer/post-create.sh"
+  "postCreateCommand": "bash ./.devcontainer/post-create.sh",
+  "postStartCommand": "git config --global --add saf.directory ${containerWorkspaceFolder}"
 }
